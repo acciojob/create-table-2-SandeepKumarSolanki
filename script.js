@@ -8,10 +8,10 @@ function createTable() {
 	rowValue = parseInt(rowValue);
 	colValue = parseInt(colValue);
 	
-	// if(rowValue !== Number && colValue !== Number){
-	// 	alert('please enter a valid number')
-	// 	return;
-	// }
+	if(isNaN(rowValue) && isNaN(colValue)){
+		alert('please enter a valid number')
+		return;
+	}
 
 	
 	if(rowValue < 0 && colValue < 0){
